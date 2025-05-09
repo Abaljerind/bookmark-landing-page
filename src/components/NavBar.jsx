@@ -1,16 +1,20 @@
 import { useState } from "react";
 
 const NavBar = () => {
-  const [nav, setNav] = useState("false");
+  const [nav, setNav] = useState(false);
 
   function handleNav() {
-    setNav(!nav);
+    setNav((prevNav) => {
+      const newNav = !prevNav;
+      document.body.style.overflow = newNav ? "hidden" : "auto";
+      return newNav;
+    });
   }
 
   const navMobile = ["Features", "Pricing", "Contact"];
 
   return (
-    <nav className="relative px-6 py-10">
+    <nav className="relative px-6 py-9">
       <div className="flex items-center justify-between md:hidden">
         <img
           src="./images/logo-bookmark.svg"
@@ -27,11 +31,11 @@ const NavBar = () => {
       </div>
 
       {/* Mobile menu */}
-      <nav
+      <div
         className={
-          nav
-            ? "fixed -top-full left-0 h-full w-full px-6 py-10 duration-300 ease-in"
-            : "fixed top-0 left-0 z-10 h-full w-full bg-[#252b46f2] px-6 py-10 duration-300 ease-in md:hidden"
+          !nav
+            ? "fixed -top-full left-0 h-full w-full px-6 py-9 duration-300 ease-in"
+            : "fixed top-0 left-0 z-10 h-full w-full bg-[#252b46f2] px-6 py-9 duration-300 ease-in md:hidden"
         }
       >
         <div className="flex items-center justify-between">
@@ -70,7 +74,7 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div className="fixed bottom-12 left-1/2 flex -translate-x-1/2 gap-10">
+        <div className="absolute bottom-12 left-1/2 flex -translate-x-1/2 gap-10">
           <a href="https://www.facebook.com">
             <img
               src="./images/icon-facebook.svg"
@@ -86,7 +90,7 @@ const NavBar = () => {
             />
           </a>
         </div>
-      </nav>
+      </div>
       {/* ./Mobile menu */}
 
       {/* Desktop menu */}
