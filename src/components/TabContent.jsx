@@ -14,7 +14,7 @@ const TabContent = ({ content }) => {
 
       {/* Content text */}
       <div className="px-6 text-center">
-        <h3 className="text-newDarkBlue mb-4 text-xl font-semibold">
+        <h3 className="text-newDarkBlue mb-4 text-2xl font-semibold">
           {content.title}
         </h3>
         <p className="text-newDarkBlue/50 mb-4">{content.text}</p>
