@@ -11,7 +11,7 @@ const NavBar = () => {
     });
   }
 
-  const navMobile = ["Features", "Pricing", "Contact"];
+  const navItems = ["Features", "Pricing", "Contact"];
 
   return (
     <nav className="relative px-6 py-9">
@@ -55,7 +55,7 @@ const NavBar = () => {
 
         <div className="relative mt-10">
           <ul className="grid items-center text-center">
-            {navMobile.map((nav, index) => {
+            {navItems.map((nav, index) => {
               return (
                 <li
                   key={index}
@@ -94,6 +94,32 @@ const NavBar = () => {
       {/* ./Mobile menu */}
 
       {/* Desktop menu */}
+      <div className="hidden items-center justify-between md:flex">
+        <img
+          src="./images/logo-bookmark.svg"
+          alt="Logo Bookmark"
+          className="select-none"
+        />
+
+        <ul className="flex items-center justify-evenly gap-5">
+          {navItems.map((nav, index) => {
+            return (
+              <li
+                key={index}
+                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase"
+              >
+                <a href="#">{nav}</a>
+              </li>
+            );
+          })}
+          <button
+            type="button"
+            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg"
+          >
+            Login
+          </button>
+        </ul>
+      </div>
       {/* ./Desktop menu */}
       <div className="hidden"></div>
     </nav>
