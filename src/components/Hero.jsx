@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse gap-15 py-7">
+    <section className="flex flex-col-reverse gap-15 py-7 md:flex-row md:gap-0 md:py-9">
       {/* hero text */}
-      <div className="px-6">
-        <div className="mb-6 text-center">
+      <div className="px-6 md:w-3/4">
+        <div className="mb-6 text-center md:text-start">
           <h1 className="text-newDarkBlue mb-4 text-3xl font-semibold tracking-wide">
             A Simple Bookmark Manager
           </h1>
@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-evenly gap-2">
+        <div className="flex justify-evenly gap-2 md:justify-start">
           <button
             type="button"
             className="bg-newBlue text-newGrey cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg"
