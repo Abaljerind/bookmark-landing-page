@@ -2,8 +2,8 @@ const TabContent = ({ content }) => {
   return (
     <>
       {/* Content image */}
-      <div className="relative mb-[74px]">
-        <div className="bg-newBlue absolute -bottom-8 -left-2 -z-[1] h-5/6 w-10/12 rounded-r-full"></div>
+      <div className="relative mb-[74px] md:mb-0 md:w-1/2">
+        <div className="bg-newBlue absolute -bottom-8 -left-2 -z-[1] h-5/6 w-10/12 rounded-r-full md:-bottom-12 md:-left-4"></div>
         <img
           src={content.image}
           alt={content.alt}
@@ -13,7 +13,7 @@ const TabContent = ({ content }) => {
       {/* ./ Content image */}
 
       {/* Content text */}
-      <div className="px-6 text-center">
+      <div className="px-6 text-center md:w-1/2 md:text-start">
         <h3 className="text-newDarkBlue mb-4 text-2xl font-semibold">
           {content.title}
         </h3>
