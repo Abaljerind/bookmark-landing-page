@@ -34,11 +34,11 @@ const Features = () => {
   return (
     <section className="flex flex-col py-20">
       {/* header */}
-      <header className="px-6 text-center">
+      <header className="px-6 text-center md:flex md:flex-col md:items-center">
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
           Features
         </h2>
-        <p className="text-newDarkBlue/50">
+        <p className="text-newDarkBlue/50 md:w-2/3">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -49,7 +49,10 @@ const Features = () => {
       {/* features list */}
       <div className="mx-auto mt-10 w-full">
         {/* tab header */}
-        <div className="flex flex-col px-6" aria-label="Feature Tabs">
+        <div
+          className="md:border-newDarkBlue/20 flex max-w-[500px] flex-col px-6 md:mx-auto md:w-fit md:max-w-[732px] md:flex-row md:justify-evenly md:gap-20 md:border-b"
+          aria-label="Feature Tabs"
+        >
           {tabs.map((tab) => {
             return (
               <button
@@ -59,7 +62,7 @@ const Features = () => {
                 aria-controls={`panel-${tab.id}`}
                 id={`tab-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
-                className={`border-newDarkBlue/20 border-t border-b py-4 nth-[2]:border-t-0 nth-[2]:border-b-0 ${activeTab === tab.id ? "text-newDarkBlue decoration-newRed underline decoration-4 underline-offset-[18px]" : "text-newDarkBlue/45"} cursor-pointer font-medium transition-all duration-300`}
+                className={`border-newDarkBlue/20 relative cursor-pointer border-t border-t-gray-300 py-4 transition-all duration-700 ease-in-out last:border-b last:border-b-gray-300 ${activeTab === tab.id ? "active-tab text-newDarkBlue" : "text-newDarkBlue/50"} md:border-0 md:last:border-0`}
               >
                 {tab.label}
               </button>
@@ -70,7 +73,7 @@ const Features = () => {
 
         {/* tab content */}
         <article
-          className="mt-20"
+          className="mt-20 md:flex md:items-center md:justify-between"
           role="tabpanel"
           id={`panel-${activeTab}`}
           aria-labelledby={`tab-${activeTab}`}
