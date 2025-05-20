@@ -26,3 +26,27 @@
   --newGrey: hsl(0, 0%, 97%);
   --newDarkBlue: hsl(229, 31%, 21%);
 }
+
+button::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: var(--newRed);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+  opacity: 0;
+}
+
+button.active-tab::before {
+  width: 55%;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  button.active-tab::before {
+    width: 148%;
+  }
+}
