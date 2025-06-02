@@ -28,7 +28,8 @@ const Downloads = () => {
           Download the extension
         </h2>
         <p className="text-newDarkBlue/50">
-          We’ve got more browsers in the pipeline. Please do let us know if
+          We’ve got more browsers in the pipeline. Please do let us know if{" "}
+          <br className="hidden md:block" />
           you’ve got a favourite you’d like us to prioritize.
         </p>
       </header>
