@@ -2,20 +2,20 @@ const Footer = () => {
   const navItems = ["features", "pricing", "contact"];
 
   return (
-    <footer className="bg-newDarkBlue flex flex-col items-center py-10">
+    <footer className="bg-newDarkBlue flex flex-col items-center py-10 md:flex-row md:justify-between md:px-6">
       {/* logo + nav */}
-      <div className="mb-12 flex flex-col items-center gap-8">
+      <div className="mb-12 flex flex-col items-center gap-8 md:mb-0 md:flex-row">
         {/* logo */}
         <img src="./images/logo-bookmark-footer.svg" alt="logo bookmark" />
         {/* ./ logo */}
 
         {/* nav item */}
-        <div>
+        <div className="md:flex md:items-center md:gap-8">
           {navItems.map((nav, index) => {
             return (
               <p
                 key={index + 1}
-                className="text-newGrey mb-5 cursor-pointer text-center tracking-widest uppercase last:mb-0"
+                className="text-newGrey mb-5 cursor-pointer text-center tracking-widest uppercase last:mb-0 md:mb-0"
               >
                 <a href="#">{nav}</a>
               </p>
