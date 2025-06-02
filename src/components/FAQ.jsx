@@ -33,26 +33,27 @@ const FAQ = () => {
   return (
     <section className="flex flex-col items-center py-20">
       {/* header */}
-      <header className="mb-15 px-6 text-center">
+      <header className="mb-14 px-6 text-center">
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
           Frequently Asked Questions
         </h2>
         <p className="text-newDarkBlue/50">
-          Here are some of our FAQs. If you have any other questions you’d like
-          answered please feel free to email us.
+          Here are some of our FAQs. If you have any other questions{" "}
+          <br className="hidden md:block" /> you’d like answered please feel
+          free to email us.
         </p>
       </header>
       {/* ./ header */}
 
       {/* FAQ */}
-      <div className="w-full px-6">
+      <div className="w-full max-w-[500px] px-6 md:mb-4 md:w-2/3">
         {faqs.map((faq, index) => {
           return (
             <div
-              className="border-newDarkBlue/10 mb-6 flex flex-col justify-between border-b-2"
+              className="border-newDarkBlue/10 mb-6 flex flex-col justify-between border-b-2 md:first:border-t-2 md:first:pt-4"
               key={index + 1}
             >
-              <div className="flex items-center justify-between pb-6">
+              <div className="flex items-center justify-between pb-4">
                 <p className="text-newDarkBlue">{faq.question}</p>
                 <button
                   onClick={() => handleOpen(index)}
