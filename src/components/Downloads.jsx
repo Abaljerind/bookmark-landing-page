@@ -43,7 +43,7 @@ const Downloads = () => {
               key={index}
               role="list"
               aria-label={`Extension card for ${browser.title}`}
-              className="drop-shadow-newBlue/20 mt-10 flex w-72 flex-col items-center justify-center gap-6 rounded-2xl bg-white pt-10 pb-6 drop-shadow-xl lg:nth-[1]:mb-20 lg:nth-[3]:mt-28"
+              className="drop-shadow-newBlue/20 mt-10 flex w-72 flex-col items-center justify-center gap-6 rounded-2xl bg-white pt-10 pb-6 drop-shadow-xl lg:nth-[1]:mb-24 lg:nth-[3]:mt-32"
             >
               <img src={browser.image} alt={browser.alt} />
               <div className="mb-2 text-center">
