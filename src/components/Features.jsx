@@ -39,9 +39,10 @@ const Features = () => {
           Features
         </h2>
         <p className="text-newDarkBlue/50 md:w-2/3">
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
+          Our aim is to make it quick and easy for you to access your{" "}
+          <br className="hidden lg:block" /> favourite websites. Your bookmarks
+          sync between your devices <br className="hidden lg:block" /> so you
+          can access them on the go.
         </p>
       </header>
       {/* ./ header */}
@@ -73,7 +74,7 @@ const Features = () => {
 
         {/* tab content */}
         <article
-          className="mt-20 md:flex md:items-center md:justify-between"
+          className="mt-20 md:flex md:items-center md:justify-between md:gap-2 lg:justify-center"
           role="tabpanel"
           id={`panel-${activeTab}`}
           aria-labelledby={`tab-${activeTab}`}
