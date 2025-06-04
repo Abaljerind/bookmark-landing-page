@@ -38,7 +38,7 @@ const Features = () => {
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
           Features
         </h2>
-        <p className="text-newDarkBlue/50 md:w-2/3">
+        <p className="text-newDarkBlue/50 md:w-2/3 lg:text-lg">
           Our aim is to make it quick and easy for you to access your{" "}
           <br className="hidden lg:block" /> favourite websites. Your bookmarks
           sync between your devices <br className="hidden lg:block" /> so you
@@ -63,7 +63,7 @@ const Features = () => {
                 aria-controls={`panel-${tab.id}`}
                 id={`tab-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
-                className={`border-newDarkBlue/20 relative cursor-pointer border-t border-t-gray-300 py-4 transition-all duration-700 ease-in-out last:border-b last:border-b-gray-300 ${activeTab === tab.id ? "active-tab text-newDarkBlue" : "text-newDarkBlue/50"} md:border-0 md:last:border-0`}
+                className={`border-newDarkBlue/20 relative cursor-pointer border-t border-t-gray-300 py-4 transition-all duration-700 ease-in-out last:border-b last:border-b-gray-300 ${activeTab === tab.id ? "active-tab text-newDarkBlue" : "text-newDarkBlue/50"} md:border-0 md:last:border-0 lg:text-lg`}
               >
                 {tab.label}
               </button>
