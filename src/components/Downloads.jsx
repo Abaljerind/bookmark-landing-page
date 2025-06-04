@@ -27,7 +27,7 @@ const Downloads = () => {
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
           Download the extension
         </h2>
-        <p className="text-newDarkBlue/50">
+        <p className="text-newDarkBlue/50 lg:text-lg">
           We’ve got more browsers in the pipeline. Please do let us know if{" "}
           <br className="hidden md:block" />
           you’ve got a favourite you’d like us to prioritize.
@@ -36,26 +36,28 @@ const Downloads = () => {
       {/* ./ header */}
 
       {/* Download extension */}
-      <ul className="flex flex-col items-center px-6">
+      <ul className="flex flex-col items-center px-6 lg:flex-row lg:justify-center lg:gap-8">
         {browsers.map((browser, index) => {
           return (
             <li
               key={index}
               role="list"
               aria-label={`Extension card for ${browser.title}`}
-              className="drop-shadow-newBlue/20 mt-10 flex w-72 flex-col items-center justify-center gap-6 rounded-2xl bg-white pt-10 pb-6 drop-shadow-xl"
+              className="drop-shadow-newBlue/20 mt-10 flex w-72 flex-col items-center justify-center gap-6 rounded-2xl bg-white pt-10 pb-6 drop-shadow-xl lg:nth-[1]:mb-20 lg:nth-[3]:mt-28"
             >
               <img src={browser.image} alt={browser.alt} />
               <div className="mb-2 text-center">
-                <h3 className="text-newDarkBlue mb-2 text-xl font-medium">
+                <h3 className="text-newDarkBlue mb-2 text-xl font-medium lg:text-2xl">
                   {browser.title}
                 </h3>
-                <p className="text-newDarkBlue/50 text-sm">{browser.version}</p>
+                <p className="text-newDarkBlue/50 text-sm lg:text-base">
+                  {browser.version}
+                </p>
               </div>
               <img src="./images/bg-dots.svg" alt="background dots" />
               <button
                 type="button"
-                className="bg-newBlue text-newGrey w-4/5 cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg"
+                className="bg-newBlue text-newGrey w-4/5 cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg lg:text-base"
               >
                 Add & Install Extension
               </button>
