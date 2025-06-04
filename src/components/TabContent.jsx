@@ -7,7 +7,7 @@ const TabContent = ({ content }) => {
         <img
           src={content.image}
           alt={content.alt}
-          className="mx-auto mr-12 h-48 w-64 md:mr-0 md:h-52 md:w-72 lg:mr-8 lg:h-64 lg:w-96"
+          className="mx-auto mr-12 h-48 w-64 md:mr-0 md:h-52 md:w-72 lg:mr-8 lg:h-64 lg:w-96 lg:nth-[2]:h-72 lg:nth-[3]:h-72"
         />
       </div>
       {/* ./ Content image */}
