@@ -14,7 +14,7 @@ const NavBar = () => {
   const navItems = ["Features", "Pricing", "Contact"];
 
   return (
-    <nav className="relative px-6 py-9 lg:px-16 xl:px-24">
+    <nav className="relative w-full px-6 py-9 lg:px-16 xl:px-20">
       <div className="flex items-center justify-between md:hidden">
         <img
           src="./images/logo-bookmark.svg"
@@ -98,10 +98,10 @@ const NavBar = () => {
         <img
           src="./images/logo-bookmark.svg"
           alt="Logo Bookmark"
-          className="select-none lg:w-44 xl:w-52"
+          className="select-none lg:w-44"
         />
 
-        <ul className="flex items-center justify-evenly gap-5 xl:gap-8">
+        <ul className="flex items-center justify-evenly gap-5 xl:gap-12">
           {navItems.map((nav, index) => {
             return (
               <li
