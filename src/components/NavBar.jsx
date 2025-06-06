@@ -14,7 +14,7 @@ const NavBar = () => {
   const navItems = ["Features", "Pricing", "Contact"];
 
   return (
-    <nav className="relative px-6 py-9 lg:px-16">
+    <nav className="relative px-6 py-9 lg:px-16 xl:px-24">
       <div className="flex items-center justify-between md:hidden">
         <img
           src="./images/logo-bookmark.svg"
@@ -98,15 +98,15 @@ const NavBar = () => {
         <img
           src="./images/logo-bookmark.svg"
           alt="Logo Bookmark"
-          className="select-none lg:w-44"
+          className="select-none lg:w-44 xl:w-52"
         />
 
-        <ul className="flex items-center justify-evenly gap-5">
+        <ul className="flex items-center justify-evenly gap-5 xl:gap-8">
           {navItems.map((nav, index) => {
             return (
               <li
                 key={index}
-                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase lg:text-lg"
+                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase lg:text-lg xl:text-xl"
               >
                 <a href="#">{nav}</a>
               </li>
@@ -114,7 +114,7 @@ const NavBar = () => {
           })}
           <button
             type="button"
-            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg lg:text-lg"
+            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg lg:text-lg xl:text-xl"
           >
             Login
           </button>
