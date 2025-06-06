@@ -37,7 +37,7 @@ const Hero = () => {
         <img
           src="./images/illustration-hero.svg"
           alt="Illustration for Hero section"
-          className="lg:absolute lg:-top-8 lg:-left-14 lg:max-w-lg"
+          className="object-cover lg:absolute lg:-top-8 lg:-left-14 lg:max-w-lg"
         />
       </div>
       {/* ./hero image */}
