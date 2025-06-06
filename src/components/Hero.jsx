@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse gap-15 py-7 md:flex-row md:gap-0 md:py-9 lg:py-15 lg:pl-16">
+    <section className="flex flex-col-reverse gap-15 py-7 md:flex-row md:gap-0 md:py-9 lg:py-15 lg:pl-16 xl:py-24 xl:pl-28">
       {/* hero text */}
       <div className="px-6 md:w-3/4 lg:mt-8 lg:w-1/2 lg:px-0">
         <div className="mb-6 text-center md:text-start lg:w-4/5 lg:max-w-[500px]">
@@ -33,11 +33,11 @@ const Hero = () => {
 
       {/* hero image */}
       <div className="relative -z-[1] lg:w-1/2">
-        <div className="bg-newBlue absolute -right-0 -bottom-0 -z-[1] h-3/4 w-10/12 rounded-l-full lg:-bottom-10 lg:h-11/12"></div>
+        <div className="bg-newBlue absolute -right-0 -bottom-0 -z-[1] h-3/4 w-10/12 rounded-l-full lg:-bottom-10 lg:h-11/12 xl:-bottom-20 xl:h-full xl:w-9/12"></div>
         <img
           src="./images/illustration-hero.svg"
           alt="Illustration for Hero section"
-          className="object-cover lg:absolute lg:-top-8 lg:-left-14 lg:max-w-lg"
+          className="object-cover lg:absolute lg:-top-8 lg:-left-14 lg:max-w-lg xl:-top-14 xl:left-10 xl:max-w-xl"
         />
       </div>
       {/* ./hero image */}

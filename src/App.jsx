@@ -8,7 +8,7 @@ import Subscribe from "./components/Subscribe";
 
 function App() {
   return (
-    <>
+    <div className="xl:mx-auto xl:max-w-[1440px]">
       <NavBar />
       <Hero />
       <Features />
@@ -16,7 +16,7 @@ function App() {
       <FAQ />
       <Subscribe />
       <Footer />
-    </>
+    </div>
   );
 }
 
