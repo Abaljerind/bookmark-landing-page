@@ -37,7 +37,7 @@ const FAQ = () => {
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
           Frequently Asked Questions
         </h2>
-        <p className="text-newDarkBlue/50">
+        <p className="text-newDarkBlue/50 lg:text-lg">
           Here are some of our FAQs. If you have any other questions{" "}
           <br className="hidden md:block" /> you’d like answered please feel
           free to email us.
@@ -54,7 +54,7 @@ const FAQ = () => {
               key={index + 1}
             >
               <div className="flex items-center justify-between pb-4">
-                <p className="text-newDarkBlue">{faq.question}</p>
+                <p className="text-newDarkBlue lg:text-lg">{faq.question}</p>
                 <button
                   onClick={() => handleOpen(index)}
                   className="cursor-pointer"
@@ -70,7 +70,7 @@ const FAQ = () => {
                 </button>
               </div>
               {openIndex === index && (
-                <p className="text-newDarkBlue/80 pb-6 leading-7">
+                <p className="text-newDarkBlue/80 pb-6 leading-7 lg:text-lg">
                   {faq.answer}
                 </p>
               )}
@@ -82,7 +82,7 @@ const FAQ = () => {
 
       <button
         type="button"
-        className="bg-newBlue text-newGrey cursor-pointer rounded-md px-7 py-3.5 text-sm font-medium shadow-lg"
+        className="bg-newBlue text-newGrey cursor-pointer rounded-md px-7 py-3.5 text-sm font-medium shadow-lg lg:text-base"
       >
         More Info
       </button>
