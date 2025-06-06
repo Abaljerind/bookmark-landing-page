@@ -98,7 +98,7 @@ const NavBar = () => {
         <img
           src="./images/logo-bookmark.svg"
           alt="Logo Bookmark"
-          className="select-none lg:w-44"
+          className="select-none lg:h-auto lg:w-44"
         />
 
         <ul className="flex items-center justify-evenly gap-5 xl:gap-12">
@@ -106,7 +106,7 @@ const NavBar = () => {
             return (
               <li
                 key={index}
-                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase lg:text-lg"
+                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase lg:text-base"
               >
                 <a href="#">{nav}</a>
               </li>
@@ -114,7 +114,7 @@ const NavBar = () => {
           })}
           <button
             type="button"
-            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg lg:text-lg"
+            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg lg:text-base"
           >
             Login
           </button>
