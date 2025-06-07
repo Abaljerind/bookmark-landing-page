@@ -106,7 +106,7 @@ const NavBar = () => {
             return (
               <li
                 key={index}
-                className="text-newDarkBlue cursor-pointer text-base tracking-widest uppercase lg:text-base"
+                className="text-newDarkBlue hover:text-newRed cursor-pointer text-base tracking-widest uppercase transition-colors duration-300 lg:text-base"
               >
                 <a href="#">{nav}</a>
               </li>
@@ -114,7 +114,7 @@ const NavBar = () => {
           })}
           <button
             type="button"
-            className="bg-newRed text-newGrey cursor-pointer rounded-md px-6 py-2 text-sm font-medium tracking-wider shadow-lg lg:text-base"
+            className="bg-newRed text-newGrey hover:text-newRed hover:ring-newRed cursor-pointer rounded-md px-6 py-2 text-sm tracking-wider uppercase shadow-lg transition-all duration-300 hover:bg-white hover:ring lg:text-base"
           >
             Login
           </button>
