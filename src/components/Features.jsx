@@ -63,7 +63,7 @@ const Features = () => {
                 aria-controls={`panel-${tab.id}`}
                 id={`tab-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
-                className={`border-newDarkBlue/20 relative cursor-pointer border-t border-t-gray-300 py-4 transition-all duration-700 ease-in-out last:border-b last:border-b-gray-300 ${activeTab === tab.id ? "active-tab text-newDarkBlue" : "text-newDarkBlue/50"} md:border-0 md:last:border-0 lg:text-lg`}
+                className={`border-newDarkBlue/20 relative cursor-pointer border-t border-t-gray-300 py-4 transition-all duration-700 ease-in-out last:border-b last:border-b-gray-300 ${activeTab === tab.id ? "active-tab text-newDarkBlue" : "text-newDarkBlue/50"} hover:text-newRed md:border-0 md:last:border-0 lg:text-lg`}
               >
                 {tab.label}
               </button>
