@@ -46,7 +46,7 @@ const FAQ = () => {
       {/* ./ header */}
 
       {/* FAQ */}
-      <div className="w-full max-w-[500px] px-6 md:mb-4 md:w-2/3">
+      <div className="w-full max-w-[500px] px-6 md:mb-4 md:w-2/3 lg:w-3/5 lg:max-w-[768px] xl:w-2/5">
         {faqs.map((faq, index) => {
           return (
             <div
@@ -54,7 +54,9 @@ const FAQ = () => {
               key={index + 1}
             >
               <div className="flex items-center justify-between pb-4">
-                <p className="text-newDarkBlue lg:text-lg">{faq.question}</p>
+                <p className="text-newDarkBlue font-medium lg:text-lg">
+                  {faq.question}
+                </p>
                 <button
                   onClick={() => handleOpen(index)}
                   className="cursor-pointer"
