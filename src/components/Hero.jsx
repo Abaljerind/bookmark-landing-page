@@ -17,13 +17,13 @@ const Hero = () => {
         <div className="flex justify-evenly gap-2 md:justify-start lg:gap-4">
           <button
             type="button"
-            className="bg-newBlue text-newGrey cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg lg:text-base"
+            className="bg-newBlue text-newGrey hover:text-newBlue hover:ring-newBlue cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring lg:text-base"
           >
             Get it on Chrome
           </button>
           <button
             type="button"
-            className="bg-newGrey text-newDarkBlue cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg lg:text-base"
+            className="bg-newGrey text-newDarkBlue hover:ring-newDarkBlue cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring lg:text-base"
           >
             Get it on Firefox
           </button>
