@@ -32,7 +32,7 @@ const Features = () => {
   };
 
   return (
-    <section className="flex flex-col py-20">
+    <section className="flex flex-col py-20 xl:py-24">
       {/* header */}
       <header className="px-6 text-center md:flex md:flex-col md:items-center">
         <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
@@ -74,7 +74,7 @@ const Features = () => {
 
         {/* tab content */}
         <article
-          className="mt-20 md:flex md:items-center md:justify-between md:gap-2 lg:justify-center"
+          className="mt-20 md:flex md:items-center md:justify-between md:gap-2 lg:justify-center xl:mt-24"
           role="tabpanel"
           id={`panel-${activeTab}`}
           aria-labelledby={`tab-${activeTab}`}
