@@ -2,9 +2,9 @@ const Footer = () => {
   const navItems = ["features", "pricing", "contact"];
 
   return (
-    <footer className="bg-newDarkBlue flex flex-col items-center py-10 md:flex-row md:justify-between md:px-6 lg:px-16">
+    <footer className="bg-newDarkBlue flex flex-col items-center py-10 md:flex-row md:justify-between md:px-6 lg:px-16 xl:px-28">
       {/* logo + nav */}
-      <div className="mb-12 flex flex-col items-center gap-8 md:mb-0 md:flex-row">
+      <div className="mb-12 flex flex-col items-center gap-8 md:mb-0 md:flex-row xl:gap-12">
         {/* logo */}
         <img
           src="./images/logo-bookmark-footer.svg"
@@ -14,7 +14,7 @@ const Footer = () => {
         {/* ./ logo */}
 
         {/* nav item */}
-        <div className="md:flex md:items-center md:gap-8">
+        <div className="md:flex md:items-center md:gap-8 xl:gap-12">
           {navItems.map((nav, index) => {
             return (
               <p
