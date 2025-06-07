@@ -57,7 +57,7 @@ const Downloads = () => {
               <img src="./images/bg-dots.svg" alt="background dots" />
               <button
                 type="button"
-                className="bg-newBlue text-newGrey w-4/5 cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg lg:text-base"
+                className="bg-newBlue text-newGrey hover:text-newBlue hover:ring-newBlue w-4/5 cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring lg:text-base"
               >
                 Add & Install Extension
               </button>
