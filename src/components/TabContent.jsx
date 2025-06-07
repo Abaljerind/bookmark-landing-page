@@ -22,7 +22,7 @@ const TabContent = ({ content }) => {
         </p>
         <button
           type="button"
-          className="bg-newBlue text-newGrey cursor-pointer rounded-md px-6 py-3 font-medium shadow-lg md:text-sm lg:text-base"
+          className="bg-newBlue text-newGrey hover:text-newBlue hover:ring-newBlue cursor-pointer rounded-md px-6 py-3 font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring md:text-sm lg:text-base"
         >
           More Info
         </button>
