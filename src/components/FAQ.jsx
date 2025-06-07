@@ -54,7 +54,7 @@ const FAQ = () => {
               key={index + 1}
             >
               <div className="flex items-center justify-between pb-4">
-                <p className="text-newDarkBlue font-medium lg:text-lg">
+                <p className="text-newDarkBlue hover:text-newRed cursor-pointer font-medium transition-colors duration-300 lg:text-lg">
                   {faq.question}
                 </p>
                 <button
@@ -84,7 +84,7 @@ const FAQ = () => {
 
       <button
         type="button"
-        className="bg-newBlue text-newGrey cursor-pointer rounded-md px-7 py-3.5 text-sm font-medium shadow-lg lg:text-base"
+        className="bg-newBlue text-newGrey hover:text-newBlue hover:ring-newBlue cursor-pointer rounded-md px-7 py-3.5 text-sm font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring lg:text-base"
       >
         More Info
       </button>
