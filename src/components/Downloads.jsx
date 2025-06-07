@@ -21,10 +21,10 @@ const Downloads = () => {
   ];
 
   return (
-    <section className="flex flex-col py-14">
+    <section className="flex flex-col py-14 xl:py-20">
       {/* header */}
-      <header className="px-6 text-center">
-        <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold">
+      <header className="px-6 text-center xl:mb-6">
+        <h2 className="text-newDarkBlue mb-3 text-2xl font-semibold xl:mb-5">
           Download the extension
         </h2>
         <p className="text-newDarkBlue/50 lg:text-lg">
