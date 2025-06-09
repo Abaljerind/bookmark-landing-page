@@ -24,7 +24,8 @@ const Subscribe = () => {
         />
         <button
           type="submit"
-          className="bg-newRed text-newGrey w-full cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg md:w-28 lg:w-32 lg:text-base"
+          className="bg-newRed text-newGrey hover:text-newRed hover:ring-newRed w-full cursor-pointer rounded-md px-4 py-3 text-sm font-medium shadow-lg transition-all duration-300 hover:bg-white hover:ring md:w-28 lg:w-32 lg:text-base"
+          onClick={(e) => e.preventDefault()}
         >
           Contact Us
         </button>
