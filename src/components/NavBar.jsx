@@ -14,7 +14,7 @@ const NavBar = () => {
   const navItems = ["Features", "Pricing", "Contact"];
 
   return (
-    <nav className="relative w-full px-6 py-9 lg:px-16 xl:px-28">
+    <nav className="sticky top-0 z-30 w-full bg-white px-6 py-9 md:relative md:z-0 lg:px-16 xl:px-28">
       <div className="flex items-center justify-between md:hidden">
         <img
           src="./images/logo-bookmark.svg"
